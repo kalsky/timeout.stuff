@@ -24,7 +24,7 @@ setup(
     long_description=description,
     license='MIT',
     classifiers=timeout_classifiers,
-    install_requires=open('requirements.txt', 'r').read().splitlines(),
+    install_requires=['decorator'],
     setup_requires=['pytest-runner'],
-    tests_requires=open('requirements-test.txt', 'r').read().splitlines()
+    tests_requires=['pytest','pytest-flake8','pytest-pep257']
 )
